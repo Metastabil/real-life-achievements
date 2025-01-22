@@ -14,25 +14,25 @@ class Database {
      * Contains the database host
      * @var string
      */
-    private string $host = '';
+    private string $host = 'localhost';
 
     /**
      * Contains the database user
      * @var string
      */
-    private string $user = '';
+    private string $user = 'root';
 
     /**
      * Contains the database name
      * @var string
      */
-    private string $db = '';
+    private string $db = 'real_life_achievements';
 
     /**
      * Contains the database password
      * @var string
      */
-    private string $pw = '';
+    private string $pw = 'Mumsili1';
 
     /**
      * Contains the database port
@@ -51,7 +51,7 @@ class Database {
      * Possible options are 'mysql' and 'mssql'.
      * @var string
      */
-    private string $db_type = '';
+    private string $db_type = 'mysql';
 
     /**
      * @return PDO

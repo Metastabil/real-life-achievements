@@ -31,6 +31,10 @@ $lang = [
         'yes' => 'Ja',
         'no' => 'Nein'
     ],
+    'data_tables' => [
+        'empty_table' => 'Keine Daten vorhanden',
+        'search' => 'Suchen'
+    ],
     'achievements' => [
         'titles' => [
             'index' => 'Errungenschaften',

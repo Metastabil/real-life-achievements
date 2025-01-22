@@ -20,7 +20,7 @@ const ENVIRONMENT = 'development';
  | With database
  |--------------------------------------------------------------------------
  */
-const WITH_DATABASE = false;
+const WITH_DATABASE = true;
 
 /*
  |--------------------------------------------------------------------------
@@ -69,6 +69,11 @@ define('LANG', get_language());
 $routeFound = router('', static function() {
     echo 'Willkommen zum KPO Framework!';
 });
+
+$routeFound = router('users', static function() {
+    $class = new \KPO\Controllers\Users();
+    $class->index();
+}) || $routeFound;
 
 if (!$routeFound) {
     header("HTTP/1.0 404 Not Found");
